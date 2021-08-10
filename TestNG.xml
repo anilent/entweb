@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- parellel="tests" -->
+
+<suite name="Suite" parallel="none">
+	<!-- <listeners>
+		<listener class-name="com.KPCCconnect.listeners.TestListeners" />
+		</listeners> -->
+<test name="Entrar Admin Module">
+	
+		<!-- <parameter name="browser" value="chrome" /> -->
+	 
+		
+		<classes>
+			<class name="biz.entrar.test.LoginTests">
+				<methods>
+					<include name="initialization"/>
+					<exclude name="validCredentialsAdmin"/>
+			<!-- 		<exclude name="AddEnqiryForm"/>
+					<exclude name="FeeCollection"/>
+					<exclude name="ProcessEnqrForm"/>
+					<exclude name="SubmissionAdmForm"/>
+					<exclude name="ScheduleEntranceTest"/> -->
+				</methods>
+			</class>
+			<!-- <class name="biz.entrar.test.NewAdmission">
+				<methods>
+					<include name="AddNewAdmission"/>
+					<include name="ConformNewAdmin"/>
+					<include name="FeeCollection"/>
+					<include name="CreateStdAccounts"/>
+					<include name="SearchStudent"/>
+					<include name="FeeReports"/>
+					<include name="FeeChequeReport"/>
+					<include name="AdmsCountReport"/>
+					<include name="AdmsReport"/>
+					<include name="AdmsDetailsReport"/>
+					<include name="AdmsFeeDtlReport"/>
+					<include name="AdmsCancleReport"/>
+					<include name="AdmsFeeInVoiceCancelReport"/>
+					<include name="AdmsSubmitedRegFormReport"/>
+					<include name="AdmsRRegFormCountReport"/>
+					<include name="AdmsRRegFormProcessFeeReport"/>
+					<include name="AdmsRRFormSMSReport"/>
+					<exclude name="AdmsRAdmPointwiseReport"/>
+					<include name="AdmsFeeCheqReConciliationReport"/>
+					<exclude name="AdmsInternalStdStreamReport"/>
+					<include name="AdmsFeeDueReport"/>
+					<include name="	"/>
+				</methods>
+			</class> -->
+			<!-- <class name="biz.entrar.test.Assessment">
+				<methods>
+				<exclude name="AssmtSubjectAreaMasters"/>
+				<exclude name="AssmtNASubjectMasters"/>
+				<exclude name="AssmtNASubjectStrands"/>
+				<exclude name="AssmtNASubjectDetails"/>
+				<exclude name="AssmtNASubjectGradMaster"/>
+				<exclude name="AssmtNASubjectRemarksBank"/>
+				<exclude name="AssmtNAOptionalSubjectAllocation"/>
+				<exclude name="AssmtAcadmiAssesmentSubjects"/>
+				<exclude name="AssmtAcadmiAssesmentSubjectsGrouping"/>
+				<exclude name="AssmtAcadmiOptionalSubjectAllocation"/>
+				<exclude name="AssmtAcadmiOptionalSubjectReport"/>
+				<exclude name="AsstAcademicOptionalSubLanguagCountReport"/>
+				</methods>
+				</class>
+			<class name="biz.entrar.test.AssesAssessmentMasters">
+				<methods>
+				<exclude name="AMAssessmentDetails"/>
+				<exclude name="AMExamActivity"/>
+				<exclude name="AMAssessmentGrouping"/>
+				<exclude name="AMExamSubjectMarks"/>
+				</methods>
+			</class>
+			<class name="biz.entrar.test.AssessmentOtherFeatures">
+				<methods>
+				<exclude name="AssmTeacherSubAllocation"/>
+				<exclude name="AssmSubjectWiseComments"/>
+				<exclude name="AssmAssessmentRemarksBank"/>
+				<exclude name="AssessmentSubjectGroupGrades"/>
+				<exclude name="AssessmentTeacherSignatureUpload"/>
+				<exclude name="AssessmentClassTeacherMappingSingle"/>
+				<exclude name="AssessmentStudentRollNumGeneration"/>
+				<exclude name="AssessmentStudentMedicalDetails"/>
+				<exclude name="AssessmentClassTeacherMappingMultiple"/>
+				<include name="AssessmentPublishTestWiseResults"/>
+				<include name="AssessmentPublishTermWiseResults"/>
+				<include name="AssessmentPublishFinalResults"/>
+				<include name="AssessmentAcitvityWiseResults"/>
+				</methods>
+			</class> -->
+				
+			<class name="biz.entrar.test.OnlineAssessment">
+			<methods>
+			<!-- <exclude name="testSteed"/> -->
+			<include name="validCredentialsTeacher"/>
+			<include name="AddAssessmentMasters"/>
+			<include name="AddQuestions"/>
+			<include name="QuestionPrivew"/>
+			<include name="ExamPublish"/>
+			
+			<exclude name="StudentLogin"/>
+			<!-- <exclude name="StartAssessment"/>
+			<exclude name="validCredentialsTeacher2"/>
+			<exclude name="AssessmentPublish"/>
+			<exclude name="StudentLogin2"/>
+			<exclude name="CheckStdAssessmentResult"/>
+			
+			<include name="addSubjectiveMastrExam"/>	
+			<include name="questionPaperUpload"/>
+			<include name="SubjectiveExamPublish"/>
+			<include name="StartSubjectiveExam"/>
+			<include name="UploadSubjAnswerSheet"/>
+			<include name="subjectiveResultPublish"/> -->
+			</methods>
+			</class> 
+			
+			<!-- <class name="biz.entrar.test.PayRollSalary">
+			<methods>
+			<include name="login"/>
+			<include name="leaveStructerAdd"/>
+			<include name="editLeaveStr"/>
+			<include name="DeleteLeaveStr"/>
+			<include name="LeaveAllocation"/>
+			<include name="LeaveEntry"/>
+			<include name="payStructer"/>
+			<include name="payStructerAllocation"/>
+			<include name="monthlyPayAlloction"/>
+			<include name="MassPayAllocation"/>
+			
+			<include name="staffPayDayUpdate"/>
+			<include name="processSalary"/>
+			<include name="salaryStatment"/>
+			<include name="salaryPaySlip"/>
+			<include name="salaryRelease"/>
+			<include name="preDefineSalaryStatment"/>
+			<include name="salaryBankReprot"/>
+			<include name="salaryAnnualReprot"/>
+			<include name="teacherCLELamountReport"/>
+			</methods>
+			</class> -->
+			
+		<!-- 	<class name="biz.entrar.test.TeacherLoginModule">
+			<methods>
+			<include name="login"/>
+			 <include name="AboutMe"/>
+			<include name="myProfile"/>
+			<include name="mySchool"/>
+			<include name="oldMarkAttendance"/>
+			<include name="newMarkAttendance"/>
+			<include name="viewAttendance"/>
+			<include name="StdAttendanceCountReprt"/>
+			<include name="StdWiseAttendanceCoutRrprt"/>
+			<include name="WrongAttendanceDelete"/>
+			<include name="AddAssignementStdWise"/> 
+			<include name="AssignementStdUpload"/>
+			<include name="sectionEvent"/>
+			<include name="LessonPlanAdd"/>
+			<include name="LessionPlanApproval"/>
+			<include name="SectionShuffling"/>
+			<include name="StudentHouseMapping"/>
+			<include name="StudentSearch"/>
+			<include name="techernotcBord"/>
+			<include name="announcement"/>
+			<include name="videoGallery"/>
+			</methods>
+			</class> -->
+		</classes>	
+	</test>	
+</suite>

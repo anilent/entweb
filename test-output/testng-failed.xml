@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Entrar Admin Module(failed)">
+    <classes>
+      <class name="biz.entrar.test.LoginTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- biz.entrar.test.LoginTests -->
+      <class name="biz.entrar.test.OnlineAssessment">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="AddQuestions"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- biz.entrar.test.OnlineAssessment -->
+    </classes>
+  </test> <!-- Entrar Admin Module(failed) -->
+</suite> <!-- Failed suite [Suite] -->

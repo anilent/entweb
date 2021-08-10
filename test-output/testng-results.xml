@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="100677" started-at="2021-08-04T07:48:54Z" finished-at="2021-08-04T07:50:34Z">
+    <groups>
+    </groups>
+    <test name="Entrar Admin Module" duration-ms="100677" started-at="2021-08-04T07:48:54Z" finished-at="2021-08-04T07:50:34Z">
+      <class name="biz.entrar.test.OnlineAssessment">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeClass" is-config="true" duration-ms="180" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validCredentialsTeacher()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="validCredentialsTeacher" duration-ms="7105" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialsTeacher -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:12Z" finished-at="2021-08-04T13:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:12Z" finished-at="2021-08-04T13:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AddAssessmentMasters()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="AddAssessmentMasters" duration-ms="27864" started-at="2021-08-04T13:19:12Z" finished-at="2021-08-04T13:19:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddAssessmentMasters -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:40Z" finished-at="2021-08-04T13:19:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:40Z" finished-at="2021-08-04T13:19:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AddQuestions()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="AddQuestions" duration-ms="23690" started-at="2021-08-04T13:19:40Z" finished-at="2021-08-04T13:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddQuestions -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:03Z" finished-at="2021-08-04T13:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:03Z" finished-at="2021-08-04T13:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="QuestionPrivew()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="QuestionPrivew" duration-ms="11667" started-at="2021-08-04T13:20:03Z" finished-at="2021-08-04T13:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuestionPrivew -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-04T13:20:15Z" finished-at="2021-08-04T13:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="ExamPublish()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="ExamPublish" duration-ms="19151" started-at="2021-08-04T13:20:15Z" finished-at="2021-08-04T13:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExamPublish -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:15Z" finished-at="2021-08-04T13:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:34Z" finished-at="2021-08-04T13:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:34Z" finished-at="2021-08-04T13:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- biz.entrar.test.OnlineAssessment -->
+      <class name="biz.entrar.test.LoginTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="beforeClass" is-config="true" duration-ms="6" started-at="2021-08-04T13:18:54Z" finished-at="2021-08-04T13:18:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="initialization" duration-ms="10973" started-at="2021-08-04T13:18:54Z" finished-at="2021-08-04T13:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:18:54Z" finished-at="2021-08-04T13:18:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- biz.entrar.test.LoginTests -->
+    </test> <!-- Entrar Admin Module -->
+  </suite> <!-- Suite -->
+</testng-results>
