@@ -52,7 +52,7 @@ public class EnvironmentsData{
 	public final static String sheetname3="logindata";
 	public final static String sheetname4="AddNewAdmissionData";
 	public final static String sheetname5="OnlineAssessment";
-	public final static int waittime=30;	
+	public final static int waittime=31;	
 	public final static String questionImg="D:\\anil\\Automation\\biz.entrar\\src\\test\\resources\\imagesData\\IQ-Test-Questions.jpg";
 	public final static String optionImg="D:\\anil\\Automation\\biz.entrar\\src\\test\\resources\\imagesData\\test01.png";
 }
