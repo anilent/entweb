@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!-- parellel="tests" -->
 
-<suite thread-count="1" name="Suite" parallel="none">
+<suite thread-count="1" name="Suite" parallel="tests">
 	<!-- <listeners> <listener class-name="com.KPCCconnect.listeners.TestListeners" 
 		/> </listeners> -->
 
