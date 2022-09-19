@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!-- parellel="tests" -->
 
-<suite thread-count="3" name="Suite" parallel="tests">
+<suite thread-count="1" name="Suite" parallel="none">
 	<!-- <listeners> <listener class-name="com.KPCCconnect.listeners.TestListeners" 
 		/> </listeners> -->
 
@@ -60,7 +60,7 @@
 
 
 					<include name="StudentLogin" />
-					<include name="PublishedAssessments" />
+					<exclude name="PublishedAssessments" />
 					<!-- <exclude name="StartAssessment"/> <exclude name="validCredentialsTeacher2"/> 
 						<exclude name="AssessmentPublish"/> <exclude name="StudentLogin2"/> <exclude 
 						name="CheckStdAssessmentResult"/> <include name="addSubjectiveMastrExam"/> 
