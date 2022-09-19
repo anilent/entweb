@@ -16,6 +16,7 @@ import biz.entrar.pagesPOM.SubmissonAdnsFormPage;
 import biz.entrarBase.BaseTest;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
@@ -57,11 +58,12 @@ public class LoginTests extends BaseTest {
   public void afterMethod() {
   }
 
- 
+  @Parameters({"browser","port"})
   @Test
-  public void initialization() throws Exception
+  public void initialization(String browser, String port) throws Exception
   {
-	  initialization("admin");
+	  System.out.println(browser+port);
+	  initialization("admin",browser,port);
 	  System.out.println("------------ LoginTest Class Initializing the Driver------");
   }
   @Test

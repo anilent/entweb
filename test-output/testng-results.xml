@@ -1,99 +1,370 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="5" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="100677" started-at="2021-08-04T07:48:54Z" finished-at="2021-08-04T07:50:34Z">
+  <suite name="Suite" duration-ms="23750" started-at="2022-09-17T11:08:57Z" finished-at="2022-09-17T11:09:21Z">
     <groups>
     </groups>
-    <test name="Entrar Admin Module" duration-ms="100677" started-at="2021-08-04T07:48:54Z" finished-at="2021-08-04T07:50:34Z">
-      <class name="biz.entrar.test.OnlineAssessment">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeClass" is-config="true" duration-ms="180" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validCredentialsTeacher()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="validCredentialsTeacher" duration-ms="7105" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validCredentialsTeacher -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:12Z" finished-at="2021-08-04T13:19:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:12Z" finished-at="2021-08-04T13:19:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="AddAssessmentMasters()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="AddAssessmentMasters" duration-ms="27864" started-at="2021-08-04T13:19:12Z" finished-at="2021-08-04T13:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddAssessmentMasters -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:40Z" finished-at="2021-08-04T13:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:40Z" finished-at="2021-08-04T13:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="AddQuestions()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="AddQuestions" duration-ms="23690" started-at="2021-08-04T13:19:40Z" finished-at="2021-08-04T13:20:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddQuestions -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:03Z" finished-at="2021-08-04T13:20:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:03Z" finished-at="2021-08-04T13:20:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="QuestionPrivew()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="QuestionPrivew" duration-ms="11667" started-at="2021-08-04T13:20:03Z" finished-at="2021-08-04T13:20:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- QuestionPrivew -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-04T13:20:15Z" finished-at="2021-08-04T13:20:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="ExamPublish()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="ExamPublish" duration-ms="19151" started-at="2021-08-04T13:20:15Z" finished-at="2021-08-04T13:20:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExamPublish -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:15Z" finished-at="2021-08-04T13:20:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:34Z" finished-at="2021-08-04T13:20:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@5bcab519]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:20:34Z" finished-at="2021-08-04T13:20:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- biz.entrar.test.OnlineAssessment -->
+    <test name="Entrar Admin Module2" duration-ms="23729" started-at="2022-09-17T11:08:57Z" finished-at="2022-09-17T11:09:21Z">
       <class name="biz.entrar.test.LoginTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="beforeClass" is-config="true" duration-ms="6" started-at="2021-08-04T13:18:54Z" finished-at="2021-08-04T13:18:54Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="beforeClass" is-config="true" duration-ms="5" started-at="2022-09-17T16:38:57Z" finished-at="2022-09-17T16:38:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="initialization" duration-ms="10973" started-at="2021-08-04T13:18:54Z" finished-at="2021-08-04T13:19:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:38:57Z" finished-at="2022-09-17T16:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="initialization(java.lang.String, java.lang.String)[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="initialization" duration-ms="23665" started-at="2022-09-17T16:38:57Z" finished-at="2022-09-17T16:39:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7777]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-6R2ID37A', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-6R2ID37A', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+	at biz.entrarBase.BaseTest.initialization(BaseTest.java:114)
+	at biz.entrar.test.LoginTests.initialization(LoginTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.0.119:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 25 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 47 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:18:54Z" finished-at="2021-08-04T13:18:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
+        <test-method status="FAIL" signature="validCredentialsAdmin()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="validCredentialsAdmin" duration-ms="32" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at biz.entrar.pagesPOM.Login_page.username(Login_page.java:50)
+	at biz.entrar.test.LoginTests.validCredentialsAdmin(LoginTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialsAdmin -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.LoginTests@6fd02e5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-08-04T13:19:05Z" finished-at="2021-08-04T13:19:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.LoginTests@20322d26]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- biz.entrar.test.LoginTests -->
+    </test> <!-- Entrar Admin Module2 -->
+    <test name="Entrar Admin Module" duration-ms="23750" started-at="2022-09-17T11:08:57Z" finished-at="2022-09-17T11:09:21Z">
+      <class name="biz.entrar.test.OnlineAssessment">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="beforeClass" is-config="true" duration-ms="34" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="StudentLogin()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="StudentLogin" duration-ms="2" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at biz.entrar.pagesPOM.Login_page.username(Login_page.java:50)
+	at biz.entrar.test.OnlineAssessment.StudentloginG(OnlineAssessment.java:363)
+	at biz.entrar.test.OnlineAssessment.StudentLogin(OnlineAssessment.java:374)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="PublishedAssessments()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="PublishedAssessments" duration-ms="18" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:115)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:102)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+	at biz.entrarBase.BaseTest.waitForVisibility(BaseTest.java:165)
+	at biz.entrarBase.BaseTest.click(BaseTest.java:182)
+	at biz.entrar.StudentPagesPOM.DashboardStudentPage.onlineAssessmentMaster(DashboardStudentPage.java:24)
+	at biz.entrar.test.OnlineAssessment.PublishedAssessments(OnlineAssessment.java:383)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PublishedAssessments -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.OnlineAssessment@490ab905]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- biz.entrar.test.OnlineAssessment -->
+      <class name="biz.entrar.test.LoginTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:biz.entrar.test.LoginTests@1e397ed7]" name="beforeClass" is-config="true" duration-ms="5" started-at="2022-09-17T16:38:57Z" finished-at="2022-09-17T16:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:biz.entrar.test.LoginTests@1e397ed7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:38:57Z" finished-at="2022-09-17T16:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="initialization(java.lang.String, java.lang.String)[pri:0, instance:biz.entrar.test.LoginTests@1e397ed7]" name="initialization" duration-ms="23665" started-at="2022-09-17T16:38:57Z" finished-at="2022-09-17T16:39:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6666]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-6R2ID37A', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-6R2ID37A', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+	at biz.entrarBase.BaseTest.initialization(BaseTest.java:84)
+	at biz.entrar.test.LoginTests.initialization(LoginTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.0.119:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 25 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 47 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:biz.entrar.test.LoginTests@1e397ed7]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:biz.entrar.test.LoginTests@1e397ed7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-09-17T16:39:21Z" finished-at="2022-09-17T16:39:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

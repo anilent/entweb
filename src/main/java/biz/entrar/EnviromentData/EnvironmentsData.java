@@ -33,6 +33,9 @@ public class EnvironmentsData{
 	public final static String invpassword="Abc@123";
 	
 	public final static String browser="chrome";
+	public final static String browser2="ff";
+	public final static String port1="6666";
+	public final static String port2="7777";
 	public static final String Chrome_key = "webdriver.chrome.driver";
 	public static final String Chrome_value = ".\\src\\test\\resources\\drivers\\chromedriver.exe";
 	public static final String FF_key = "webdriver.gecko.driver";
@@ -53,6 +56,8 @@ public class EnvironmentsData{
 	public final static String sheetname4="AddNewAdmissionData";
 	public final static String sheetname5="OnlineAssessment";
 	public final static int waittime=30;	
+	public final static String questionImg1="Questions.jpg";
+	public final static String optionImg2="optionImg01.png";
 	public final static String questionImg="D:\\anil\\Automation\\biz.entrar\\src\\test\\resources\\imagesData\\IQ-Test-Questions.jpg";
 	public final static String optionImg="D:\\anil\\Automation\\biz.entrar\\src\\test\\resources\\imagesData\\test01.png";
 }

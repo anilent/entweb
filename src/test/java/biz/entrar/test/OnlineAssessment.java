@@ -2,6 +2,7 @@ package biz.entrar.test;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +10,17 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.LocalFileDetector;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.server.handler.html5.Utils;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
 
 import biz.entrar.EnviromentData.EnvironmentsData;
 import biz.entrar.StudentPagesPOM.AssessmentTestPage;
@@ -69,7 +75,9 @@ public class OnlineAssessment extends BaseTest {
 	@AfterClass
 	public void afterClass() {
 	}
-
+	
+	
+	
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
 
@@ -177,7 +185,7 @@ public class OnlineAssessment extends BaseTest {
 	public void AddQuestions() throws Exception {
 		System.out.println("------------ Add Assessment Questions TestCase -----------");
 		
-		//driver.get("https://entrar.in/online_exam_question/addQuestion/23195");
+		//driver.get("https://entrar.in/online_exam_question/addQuestion/24111");
 
 		addqustn = new AddOnlineAssesmQuestionsPage();
 		AssertValidation("Online Assessment Question",
@@ -188,7 +196,12 @@ public class OnlineAssessment extends BaseTest {
 			addqustn.etrQuestion(i
 					+ ") ಡಾ.ಸುಬ್ರಮಣಿಯನ್  ಚಂದ್ರಶೇಖರ್ ವಿಶ್ವವಿಖ್ಯಾತ ಖಗೋಳ ಭೌತಶಾಸ್ತ್ರಜ್ಞರಾಗಿದ್ದಾರೆ. ಖಗೋಳ ಶಾಸ್ತ್ರದಲ್ಲಿ  ನಡೆಸಿದ ಅಸಾಧಾರಣ ಸಂಶೋಧನಾ ಕಾರ್ಯಕ್ಕಾಗಿ ಡಾ|| ಎಸ್ ಚಂದ್ರಶೇಖರ್ ಗೆ 1983 ರಲ್ಲಿ  ,ಭೌತಶಾಸ್ತ್ರ ವಿಭಾಗದ ನೊಬೆಲ್ ಪಾರಿತೋಷಕವನ್ನು ನೀಡಲಾಯಿತು. ಈ ಪಾರಿತೋಷಕವನ್ನು ಅವರು  ಅಮೆರಿಕಾದ ವಿರಿಯಮ್ ಫೌಲರ್ ಜೊತೆ ಹಂಚಿಕೊಂಡರು.-"
 					+ dmhms());
-			sendKeys(addqustn.qutionImg(), EnvironmentsData.questionImg);
+			/*RemoteWebDriver driverr = null;
+			 driverr.setFileDetector(new LocalFileDetector());*/
+			    File file = new File(System.getProperty("user.dir") + "/resources/images/" + EnvironmentsData.questionImg1);
+			    String questionImg = file.getAbsolutePath();
+			    System.out.println("Dynamic image path - "+questionImg);
+			sendKeys(addqustn.qutionImg(), questionImg);
 			}else if(i==2) {	
 				addqustn.etrQuestion(i
 						+ ") भाषाई आधार पर सर्वप्रथम किस राज्य का गठन हुआ ? -"+ dmhms());
@@ -217,9 +230,11 @@ public class OnlineAssessment extends BaseTest {
 				driver.findElement(By.xpath("//*[@id='quesradio_" + k + "']")).sendKeys(options);
 				if(k==0 & i==1)
 				{
-					
 					Thread.sleep(1000);
-					sendKeys(addqustn.optionImg1(), EnvironmentsData.optionImg);
+					 File file = new File(System.getProperty("user.dir") + "/resources/images/" + EnvironmentsData.optionImg2);
+					 String optionimg = file.getAbsolutePath();
+					 System.out.println("Dynamic image path - "+optionimg);
+					sendKeys(addqustn.optionImg1(), optionimg);
 				}
 				System.out.println(options);
 			}
@@ -362,12 +377,24 @@ public class OnlineAssessment extends BaseTest {
 	ArrayList<String> stdAttamted;
 
 	@Test
+	public void PublishedAssessments() throws Exception
+	{
+		System.out.println("------------ Published Assessments List ------------");
+		dashbordStd.onlineAssessmentMaster();
+		ScrolljavaScript(dashbordStd.onlineassmt());
+		onlinAssmStd = dashbordStd.onlineAssessment();
+		AssertValidation("Online Assessment", getAttribut(onlinAssmStd.pageTitle(), "Text", "Page Title Verification"));
+	}
+	@Test
 	public void StartAssessment() throws Exception {
 		System.out.println("------------ Start and Submit Assessment TestCase ------------");
-		dashbordStd.onlineAssessmentMaster();
+		/*dashbordStd.onlineAssessmentMaster();
 		onlinAssmStd = dashbordStd.onlineAssessment();
 		AssertValidation("Online Assessment", getAttribut(onlinAssmStd.pageTitle(), "Text", "Page Title Verification"));
 
+		WebElement assessmentNam = driver.findElement(By.xpath("//*[.='" + assmntName + "']"));
+		ScrolljavaScript(assessmentNam);
+		Thread.sleep(1000);*/
 		WebElement assessmentNam = driver.findElement(By.xpath("//*[.='" + assmntName + "']"));
 		ScrolljavaScript(assessmentNam);
 		Thread.sleep(1000);

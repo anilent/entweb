@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Entrar Admin Module(failed)">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="port" value="7777"/>
+  <parameter name="browser" value="ff"/>
+  <test name="Entrar Admin Module2(failed)" parallel="tests">
+    <parameter name="port" value="7777"/>
+    <parameter name="browser" value="ff"/>
     <classes>
-      <class name="biz.entrar.test.LoginTests">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- biz.entrar.test.LoginTests -->
       <class name="biz.entrar.test.OnlineAssessment">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterClass"/>
-          <include name="AddQuestions"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- biz.entrar.test.OnlineAssessment -->
+      <class name="biz.entrar.test.LoginTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="initialization" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="validCredentialsAdmin"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- biz.entrar.test.LoginTests -->
+    </classes>
+  </test> <!-- Entrar Admin Module2(failed) -->
+  <test name="Entrar Admin Module(failed)" parallel="tests">
+    <parameter name="port" value="6666"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="biz.entrar.test.OnlineAssessment">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="StudentLogin"/>
+          <include name="afterClass"/>
+          <include name="PublishedAssessments"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- biz.entrar.test.OnlineAssessment -->
+      <class name="biz.entrar.test.LoginTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="initialization" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- biz.entrar.test.LoginTests -->
     </classes>
   </test> <!-- Entrar Admin Module(failed) -->
 </suite> <!-- Failed suite [Suite] -->

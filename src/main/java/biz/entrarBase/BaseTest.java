@@ -7,6 +7,8 @@ import biz.entrar.pagesPOM.DashboardPage;
 import biz.entrar.pagesPOM.Login_page;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -23,6 +25,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -30,10 +33,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Parameters;
+
+import com.beust.jcommander.Parameter;
 //import org.testng.*;//Assert
 
 
@@ -49,22 +58,72 @@ public class BaseTest {
 	}*/
 	
 	
-	public static void initialization(String url) throws InterruptedException 
+	
+	public static void initialization(String url,String browser, String port) throws InterruptedException, Exception 
 	{
 	String Browsername=EnvironmentsData.browser;
+	String Browsername2=EnvironmentsData.browser2;
+	String port11=EnvironmentsData.port1;
+	String port22=EnvironmentsData.port2;
 	
-	if(Browsername.equals("chrome"))
+	if(Browsername.equals(browser)& port.equals(port11))
 	{
-		System.setProperty(EnvironmentsData.Chrome_key, EnvironmentsData.Chrome_value);
+		System.out.println(browser+"---"+port);
+		System.out.println("came inside the chrome browser");
+		Thread.sleep(2000);
+		//defining the Desired Capabilities
+		DesiredCapabilities capabl=new DesiredCapabilities();
+		capabl.setBrowserName("chrome");
+		capabl.setPlatform(Platform.WINDOWS);
+		
+		//chrome options definition
+		ChromeOptions options=new ChromeOptions();
+		options.merge(capabl);
+		
+		String hubUrl ="http://192.168.0.119:4444/wd/hub";
+		driver = new RemoteWebDriver(new URL(hubUrl),options);
+		
+		
+		/*System.setProperty(EnvironmentsData.Chrome_key, EnvironmentsData.Chrome_value);
 		Thread.sleep(3000);
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("use-fake-ui-for-media-stream"); //avoids the need to grant camera/microphone permissions.
-		driver =new ChromeDriver(option);
-	}else if (Browsername.equals("FF"))
+		driver =new ChromeDriver(option);*/
+	}
+	if (Browsername2.equals(browser) & port.equals(port22))
 	{
+		/*System.out.println(browser+"---"+port);
+		System.out.println("Came inside the fireFox setup");
 		System.setProperty(EnvironmentsData.FF_key, EnvironmentsData.FF_value);
 		Thread.sleep(3000);
-		driver = new FirefoxDriver();
+		driver = new FirefoxDriver();*/
+		
+		System.out.println(browser+"---"+port);
+		System.out.println("came inside the chrome browser 2");
+		Thread.sleep(2000);
+	
+		DesiredCapabilities capabl=new DesiredCapabilities();
+		capabl.setBrowserName("chrome");
+		capabl.setPlatform(Platform.WINDOWS);
+		
+		//chrome options definition
+		ChromeOptions options=new ChromeOptions();
+		options.merge(capabl);
+		
+		String hubUrl ="http://192.168.0.119:4444/wd/hub";
+		driver = new RemoteWebDriver(new URL(hubUrl),options);
+		
+		// firefox details
+		/*DesiredCapabilities capabl=new DesiredCapabilities();
+		capabl.setBrowserName("firefox");
+		capabl.setPlatform(Platform.ANY);
+		
+		//firefox options definition
+		FirefoxOptions options2=new FirefoxOptions();
+		options2.merge(capabl);
+		
+		String hubUrl ="http://192.168.0.119:4444/wd/hub";
+		driver = new RemoteWebDriver(new URL(hubUrl),options2);*/
 	}
 	
 	if(url.equals("admin"))

@@ -24,6 +24,10 @@ public class DashboardStudentPage extends BaseTest{
 		click(onlineAssessmentMaster);
 	}
 	
+	public WebElement onlineassmt()
+	{
+		return onlineAssessment;
+	}
 	public StdOnlineAssessmentViewPage onlineAssessment()
 	{
 		
