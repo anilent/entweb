@@ -80,15 +80,15 @@ public class BaseTest {
 		ChromeOptions options=new ChromeOptions();
 		options.merge(capabl);
 		
-		String hubUrl ="http://192.168.0.119:4444/wd/hub";
-		driver = new RemoteWebDriver(new URL(hubUrl),options);
+		/*String hubUrl ="http://192.168.0.119:4444/wd/hub";
+		driver = new RemoteWebDriver(new URL(hubUrl),options);*/
 		
 		
-		/*System.setProperty(EnvironmentsData.Chrome_key, EnvironmentsData.Chrome_value);
+		System.setProperty(EnvironmentsData.Chrome_key, EnvironmentsData.Chrome_value);
 		Thread.sleep(3000);
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("use-fake-ui-for-media-stream"); //avoids the need to grant camera/microphone permissions.
-		driver =new ChromeDriver(option);*/
+		driver =new ChromeDriver(option);
 	}
 	if (Browsername2.equals(browser) & port.equals(port22))
 	{

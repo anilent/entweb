@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <parameter name="port" value="7777"/>
   <parameter name="browser" value="ff"/>
   <test name="Entrar Admin Module(failed)" parallel="tests">
@@ -23,6 +23,7 @@
           <include name="initialization" invocation-numbers="0"/>
           <include name="afterClass"/>
           <include name="afterClass"/>
+          <include name="validCredentialsAdmin"/>
           <include name="beforeMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>

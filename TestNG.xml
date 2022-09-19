@@ -14,7 +14,7 @@
 			<class name="biz.entrar.test.LoginTests">
 				<methods>
 					<include name="initialization" />
-					<exclude name="validCredentialsAdmin" />
+					<include name="validCredentialsAdmin" />
 					<!-- <exclude name="AddEnqiryForm"/> <exclude name="FeeCollection"/> 
 						<exclude name="ProcessEnqrForm"/> <exclude name="SubmissionAdmForm"/> <exclude 
 						name="ScheduleEntranceTest"/> -->
