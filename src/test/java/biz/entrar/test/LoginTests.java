@@ -80,7 +80,7 @@ public class LoginTests extends BaseTest {
 	    
 	    loginpg.username(EnvironmentsData.usernameAdmin);
 	    loginpg.password(EnvironmentsData.passwordAdmin);
-	    dashbord=loginpg.loginButton();
+	    //dashbord=loginpg.loginButton();
   }
 
   
