@@ -94,7 +94,7 @@
 		</classes>
 	</test>
 
-	<test name="Entrar Admin Module2">
+	<!-- <test name="Entrar Admin Module2">
 		<parameter name="browser" value="ff" />
 		<parameter name="port" value="7777" />
 		<classes>
@@ -106,5 +106,5 @@
 			</class>
 		</classes>
 
-	</test>
+	</test> -->
 </suite>
