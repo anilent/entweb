@@ -62,6 +62,7 @@ public class LoginTests extends BaseTest {
   @Test
   public void initialization(String browser, String port) throws Exception
   {
+	  Thread.sleep(2000);
 	  System.out.println(browser+port);
 	  initialization("admin",browser,port);
 	  System.out.println("------------ LoginTest Class Initializing the Driver------");

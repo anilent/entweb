@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!-- parellel="tests" -->
 
-<suite thread-count="1" name="Suite" parallel="tests">
+<suite thread-count="2" name="Suite" parallel="tests">
 	<!-- <listeners> <listener class-name="com.KPCCconnect.listeners.TestListeners" 
 		/> </listeners> -->
 
@@ -49,9 +49,9 @@
 				<include name="AssessmentPublishTermWiseResults"/> <include name="AssessmentPublishFinalResults"/> 
 				<include name="AssessmentAcitvityWiseResults"/> </methods> </class> -->
 
-			<class name="biz.entrar.test.OnlineAssessment">
+		<!-- 	<class name="biz.entrar.test.OnlineAssessment">
 				<methods>
-					<!-- <exclude name="testSteed"/> -->
+					<exclude name="testSteed"/>
 					<exclude name="validCredentialsTeacher" />
 					<exclude name="AddAssessmentMasters" />
 					<exclude name="AddQuestions" />
@@ -59,16 +59,16 @@
 					<exclude name="ExamPublish" />
 
 
-					<include name="StudentLogin" />
+					<exclude name="StudentLogin" />
 					<exclude name="PublishedAssessments" />
-					<!-- <exclude name="StartAssessment"/> <exclude name="validCredentialsTeacher2"/> 
+					<exclude name="StartAssessment"/> <exclude name="validCredentialsTeacher2"/> 
 						<exclude name="AssessmentPublish"/> <exclude name="StudentLogin2"/> <exclude 
 						name="CheckStdAssessmentResult"/> <include name="addSubjectiveMastrExam"/> 
 						<include name="questionPaperUpload"/> <include name="SubjectiveExamPublish"/> 
 						<include name="StartSubjectiveExam"/> <include name="UploadSubjAnswerSheet"/> 
-						<include name="subjectiveResultPublish"/> -->
+						<include name="subjectiveResultPublish"/>
 				</methods>
-			</class>
+			</class> -->
 
 			<!-- <class name="biz.entrar.test.PayRollSalary"> <methods> <include name="login"/> 
 				<include name="leaveStructerAdd"/> <include name="editLeaveStr"/> <include 

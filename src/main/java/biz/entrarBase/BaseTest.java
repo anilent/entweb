@@ -110,8 +110,16 @@ public class BaseTest {
 		ChromeOptions options=new ChromeOptions();
 		options.merge(capabl);
 		
-		String hubUrl ="http://192.168.0.119:4444/wd/hub";
-		driver = new RemoteWebDriver(new URL(hubUrl),options);
+		System.setProperty(EnvironmentsData.Chrome_key, EnvironmentsData.Chrome_value);
+		Thread.sleep(3000);
+		ChromeOptions option=new ChromeOptions();
+		option.addArguments("use-fake-ui-for-media-stream"); //avoids the need to grant camera/microphone permissions.
+		driver =new ChromeDriver(option);
+		
+		
+		//note commeting not to specify the selenum grid...
+		/*String hubUrl ="http://192.168.0.119:4444/wd/hub";
+		driver = new RemoteWebDriver(new URL(hubUrl),options);*/
 		
 		// firefox details
 		/*DesiredCapabilities capabl=new DesiredCapabilities();
