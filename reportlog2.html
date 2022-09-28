@@ -1,0 +1,2107 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Cucumber Framework - LMS Skoodle</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+            
+      
+        
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Cucumber Report - LMS Skoodle</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Jun 4, 2022 11:36:32 AM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@Login_feature</a></li>
+					<li><a href='#'>@ValidLogin</a></li>
+					<li><a href='#'>@addNewLead</a></li>
+					<li><a href='#'>@viewLeadDetails</a></li>
+					<li><a href='#'>@LeadFollowUp</a></li>
+					<li><a href='#'>@LeadMeetingschedule</a></li>
+					<li><a href='#'>@LeadUploadDocuments&Status</a></li>
+					<li><a href='#'>@Login_feature2</a></li>
+					<li><a href='#'>@CreateMatter</a></li>
+					<li><a href='#'>@AddMatterDocs</a></li>
+					<li><a href='#'>@AddMatterNotes</a></li>
+					<li><a href='#'>@CreateSelfTask</a></li>
+					<li><a href='#'>@CreateAssignTask</a></li>
+					<li><a href='#'>@CreateTimeEntryActivity</a></li>
+					<li><a href='#'>@CreateNewExpenseActivity</a></li>
+					<li><a href='#'>@CreateHearing</a></li>
+					<li><a href='#'>@CreateShortBillingTask</a></li>
+					<li><a href='#'>@other_menuFeaturs03</a></li>
+					<li><a href='#'>@createRatCards</a></li>
+					<li><a href='#'>@ConflictCheck</a></li>
+					<li><a href='#'>@createAccounts</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> feature(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>19</span> scenario(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>76</span> step(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Test Login and Lead Actions</span>
+						<span class='test-time'>Jun 4, 2022 11:36:32 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='2' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@ValidLogin</span>
+    </div>
+    <span class='duration right label'>0h 0m 18s+432ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: As an existing user, I want to login successfully.</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='3' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user is on the Login page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='4' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the user enters username and password</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='5' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the successful login message is displayed</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='6' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@addNewLead</span>
+    </div>
+    <span class='duration right label'>0h 0m 50s+132ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: User need to add the New Lead.</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='7' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user is in Dashbaord page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='8' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the user need to navigate to Lead page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='9' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on add button user need to add the New Lead</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='10' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the successful New Lead added message and Record need to display</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='11' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@viewLeadDetails</span>
+    </div>
+    <span class='duration right label'>0h 0m 2s+847ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: view and verify the newly added Lead Details.</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='12' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user is in Lead List page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='13' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on newly added Lead details</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='14' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And then verifiy the Lead Details</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='15' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@LeadFollowUp</span>
+    </div>
+    <span class='duration right label'>0h 0m 6s+897ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: AS an existing Lead, i want to add the Followup</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='16' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Lead Details page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='17' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on add Followup and enter all required fields then add it</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='18' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And then verfiy the added followup details</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='19' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@LeadMeetingschedule</span>
+    </div>
+    <span class='duration right label'>0h 0m 19s+12ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: As an existing Lead , i want to add the Meetings</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='20' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user will navigat from Lead Details page to add meeting page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='21' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter all required fields then Schedule the meeting</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='22' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And then verfiy schedule meeting is added or not</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='23' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@LeadUploadDocuments&Status</span>
+    </div>
+    <span class='duration right label'>0h 1m 55s+706ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: As an existing Lead, i want to Upload the documents and Lead Timeline status</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='24' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Lead Detaisl pag</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='25' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user need upload the documents with respect to the status and verfiy and update the Lead Titmeline Status and verfiy it</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='26' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And do conflict Check and move Lead to the CRM Client and verfiy it same</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>client actions creating Matter</span>
+						<span class='test-time'>Jun 4, 2022 11:40:05 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='28' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateMatter</span>
+    </div>
+    <span class='duration right label'>0h 0m 35s+805ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: as existing Client user want to create the matter</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='29' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in client list page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='30' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then navigate to the client</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='31' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And then add the Matter by entring all required fiedls</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='32' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify Matter is created or not</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='33' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@AddMatterDocs</span>
+    </div>
+    <span class='duration right label'>0h 0m 9s+421ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for existing Matter User need to upload and creat Documents</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='34' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in client Details page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='35' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on Matter and navigate to matter detaisl page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='36' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And then Create and add the Documents related to the matter</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='37' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify the same create and uploade data</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='38' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@AddMatterNotes</span>
+    </div>
+    <span class='duration right label'>0h 0m 1s+634ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for existing Matter user need to creat the Note of both Text and voice notes</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='39' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Matter Details page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='40' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then navigate to the Note tab</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='41' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And add the Notes of both Text and voice</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='42' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify the same Notes</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='43' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateSelfTask</span>
+    </div>
+    <span class='duration right label'>0h 0m 16s+635ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for the existing Matter user need to create the Self Task</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='44' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Task Page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='45' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then navigate to the add new Task</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='46' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And select the self task</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='47' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And created the self task by entering all required fields</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='48' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify the "self" task created or not</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='49' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateAssignTask</span>
+    </div>
+    <span class='duration right label'>0h 0m 55s+534ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for the existing matter user need to create the Assign Task</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='50' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Task list page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='51' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on add button and select the Task as Assign</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='52' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enter all required field and assgin the task</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='53' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify the Assign task created or not</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='54' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateTimeEntryActivity</span>
+    </div>
+    <span class='duration right label'>0h 0m 10s+131ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for the existing matter user need to create Time Entry Activity</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='55' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Matter home page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='56' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on Activity Tab</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='57' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on new Time Entry</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='58' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter all required Time Entry fields and added it</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='59' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the newly entered time entry activity</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='60' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateNewExpenseActivity</span>
+    </div>
+    <span class='duration right label'>0h 0m 7s+474ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for the existing matter user need to create new Expense</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='61' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in the Matter home page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='62' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on Activity Tab to add Expense</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='63' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on new Expense button</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='64' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter all required Expense fields and added it</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='65' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the newly entered Expense</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='66' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateHearing</span>
+    </div>
+    <span class='duration right label'>0h 1m 14s+356ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: for the existing matter uer need to create the Hearing</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='67' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user will in Matter detaisl page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='68' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on add new Hearing button</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='69' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And fill all the requried fiedls</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='70' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on save button and Verfily added or not</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='71' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then add the Task for newly added Hearing</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='72' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@CreateShortBillingTask</span>
+    </div>
+    <span class='duration right label'>0h 0m 13s+478ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: as a existing client user wnat to create the Short Billing Task</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='73' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in client Details page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='74' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then navigate to the ShortBilling tab</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='75' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Add new Short billing Button</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='76' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter all mandatory fields and Creat the Billable Task</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='77' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify the newly created short billing Task details</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='78'>
+					<div class='test-heading'>
+						<span class='test-name'>Conflict Check and rate Card Creating</span>
+						<span class='test-time'>Jun 4, 2022 11:43:50 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='79' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@createRatCards</span>
+    </div>
+    <span class='duration right label'>0h 0m 1s+415ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: As a admin user login, user should able to RatCard</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='80' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user in Dashbard Page</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='81' class='node when pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigate to Ratcard page , ratecard page should display</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='82' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter all the required fields</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='83' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on add then verify the the cratCard Created or not</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenariooutline node' test-id='84' status='pass'>
+    <span class='duration right label'>0h 0m 6s+248ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: as a logedin user should able to check the Conflict functinality</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='85' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>as a logedin user should able to check the Conflict functinality</div>
+            <ul class='gc steps'>
+                    <li test-id='86' class='gc given pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Dashbard Page of LMS</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='87' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigate to Conflict check page , Conflict check page should display</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='88' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter the "anil@entrar.in" and check weather conflict data is fount or not</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='89' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And if conflict data fount then print the data</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+            </ul>
+        </li>
+        <li test-id='90' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>as a logedin user should able to check the Conflict functinality</div>
+            <ul class='gc steps'>
+                    <li test-id='91' class='gc given pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user in Dashbard Page of LMS</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='92' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigate to Conflict check page , Conflict check page should display</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='93' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter the "8904556699" and check weather conflict data is fount or not</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='94' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And if conflict data fount then print the data</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='95' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@createAccounts</span>
+    </div>
+    <span class='duration right label'>0h 0m 10s+286ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: as alogedin user, user should able to createAccount</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='96' class='node given pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user is in Dashbard page of LMS app</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='97' class='node when pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigate to createAccounts apge verify Create Accounts page displayed or not</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='98' class='node then pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then enter the all mandtory fields and save it</div>
+                <div class="node-step">passed</div>
+        </li>
+        <li test-id='99' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify newly added account details added or not</div>
+                <div class="node-step">passed</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Login_feature</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:36:32 AM</td>
+										<td class='linked' test-id='1'>Test Login and Lead Actions</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ValidLogin</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:36:32 AM</td>
+										<td class='linked' test-id='2'>Test Login and Lead Actions.As an existing user, I want to login successfully.</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@addNewLead</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:36:51 AM</td>
+										<td class='linked' test-id='6'>Test Login and Lead Actions.User need to add the New Lead.</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@viewLeadDetails</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:37:41 AM</td>
+										<td class='linked' test-id='11'>Test Login and Lead Actions.view and verify the newly added Lead Details.</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@LeadFollowUp</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:37:44 AM</td>
+										<td class='linked' test-id='15'>Test Login and Lead Actions.AS an existing Lead, i want to add the Followup</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@LeadMeetingschedule</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:37:51 AM</td>
+										<td class='linked' test-id='19'>Test Login and Lead Actions.As an existing Lead , i want to add the Meetings</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@LeadUploadDocuments&Status</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:38:10 AM</td>
+										<td class='linked' test-id='23'>Test Login and Lead Actions.As an existing Lead, i want to Upload the documents and Lead Timeline status</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Login_feature2</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:40:05 AM</td>
+										<td class='linked' test-id='27'>client actions creating Matter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateMatter</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:40:05 AM</td>
+										<td class='linked' test-id='28'>client actions creating Matter.as existing Client user want to create the matter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddMatterDocs</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:40:41 AM</td>
+										<td class='linked' test-id='33'>client actions creating Matter.for existing Matter User need to upload and creat Documents</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddMatterNotes</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:40:51 AM</td>
+										<td class='linked' test-id='38'>client actions creating Matter.for existing Matter user need to creat the Note of both Text and voice notes</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateSelfTask</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:40:52 AM</td>
+										<td class='linked' test-id='43'>client actions creating Matter.for the existing Matter user need to create the Self Task</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateAssignTask</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:41:09 AM</td>
+										<td class='linked' test-id='49'>client actions creating Matter.for the existing matter user need to create the Assign Task</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateTimeEntryActivity</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:42:04 AM</td>
+										<td class='linked' test-id='54'>client actions creating Matter.for the existing matter user need to create Time Entry Activity</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateNewExpenseActivity</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:42:14 AM</td>
+										<td class='linked' test-id='60'>client actions creating Matter.for the existing matter user need to create new Expense</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateHearing</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:42:22 AM</td>
+										<td class='linked' test-id='66'>client actions creating Matter.for the existing matter uer need to create the Hearing</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CreateShortBillingTask</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:43:36 AM</td>
+										<td class='linked' test-id='72'>client actions creating Matter.as a existing client user wnat to create the Short Billing Task</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@other_menuFeaturs03</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:43:50 AM</td>
+										<td class='linked' test-id='78'>Conflict Check and rate Card Creating</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 4, 2022 11:43:51 AM</td>
+										<td class='linked' test-id='85'>Conflict Check and rate Card Creating.as a logedin user should able to check the Conflict functinality.as a logedin user should able to check the Conflict functinality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 4, 2022 11:43:54 AM</td>
+										<td class='linked' test-id='90'>Conflict Check and rate Card Creating.as a logedin user should able to check the Conflict functinality.as a logedin user should able to check the Conflict functinality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@createRatCards</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:43:50 AM</td>
+										<td class='linked' test-id='79'>Conflict Check and rate Card Creating.As a admin user login, user should able to RatCard</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ConflictCheck</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:43:51 AM</td>
+										<td class='linked' test-id='85'>Conflict Check and rate Card Creating.as a logedin user should able to check the Conflict functinality.as a logedin user should able to check the Conflict functinality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 4, 2022 11:43:54 AM</td>
+										<td class='linked' test-id='90'>Conflict Check and rate Card Creating.as a logedin user should able to check the Conflict functinality.as a logedin user should able to check the Conflict functinality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@createAccounts</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 4, 2022 11:43:58 AM</td>
+										<td class='linked' test-id='95'>Conflict Check and rate Card Creating.as alogedin user, user should able to createAccount</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>3</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>19</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>76</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jun 4, 2022 11:36:32 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jun 4, 2022 11:44:08 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 7m 35s+791ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>user</td>
+								<td>Anil</td>
+							</tr>
+							<tr>
+								<td>Time Zone</td>
+								<td>Asia/Calcutta</td>
+							</tr>
+							<tr>
+								<td>Machine</td>
+								<td>Windows 10 64 Bit</td>
+							</tr>
+							<tr>
+								<td>Selenium</td>
+								<td>3.141.59</td>
+							</tr>
+							<tr>
+								<td>Maven</td>
+								<td>3.7.0</td>
+							</tr>
+							<tr>
+								<td>Java Version</td>
+								<td>8</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@Login_feature</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ValidLogin</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@addNewLead</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@viewLeadDetails</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@LeadFollowUp</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@LeadMeetingschedule</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@LeadUploadDocuments&Status</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Login_feature2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateMatter</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddMatterDocs</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddMatterNotes</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateSelfTask</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateAssignTask</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateTimeEntryActivity</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateNewExpenseActivity</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateHearing</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CreateShortBillingTask</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@other_menuFeaturs03</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@createRatCards</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ConflictCheck</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@createAccounts</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<div id='testrunner-logs-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>TestRunner Logs</h5>
+		
+		<div class='card-panel'>
+				UserName : anil@entrar.in</br>
+				Password : Password@1</br>
+				Logged In Username -  - anil kumar</br>
+				Login page Title -  - LMS Hamdan</br>
+				--------- Add New Lead ---------</br>
+				Dashboard Page Title - LMS Hamdan</br>
+				 Add Lead page Title - LMS Hamdan</br>
+				Lead Source - Google Ads</br>
+				Lead Prefix - Mr</br>
+				Lead First Name : QAnil0406113656</br>
+				Lead Middle Name : kumar</br>
+				Lead Last Name : reddy</br>
+				Lead Mobile No : 444113659</br>
+				Phone no Type - Work</br>
+				Lead Email Id : QAnil0406113656@entrar.in</br>
+				Email Type - Work</br>
+				Address : Skoodle learning Pvt. Ltd. Patalamma temple road, Basavangudi,</br>
+				City : Bangalore</br>
+				State : Karanataka</br>
+				zipCode : 45666</br>
+				Country : India</br>
+				Address Type - Work</br>
+				Nature of Disput : Qa Test Nature of Dispcut description</br>
+				Practice Area - Criminal Defense</br>
+				Party Opposing - Details</br>
+				First Name : QaOppnFisName043723</br>
+				Middle Name : QaMiddle043726</br>
+				Last Name : QaLast043728</br>
+				Eamil id : 043729@entrar.in</br>
+				Phone num : 444113731</br>
+				Reation : Friend043733</br>
+				Succesfuly Lead Added..!</br>
+				--------- Verifiy Lead Details ---------</br>
+				Verified Lead Name - QAnil0406113656</br>
+				Verified Lead Phone No - 444113659 (primary)</br>
+				Verified TimeLineStatus - INITIATED</br>
+				Verified LeadCurrentStatus - INITIATED</br>
+				--------- Add Lead Followup ---------</br>
+				Folloup Topic : Lead ready for further Disccession Automation Added</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				Verifiyed the Folloup - Lead ready for further Disccession Automation Added</br>
+				---------- Add Lead Meeting -----------</br>
+				Meeting Title : Meeting with CA on initial discussion</br>
+				Group - CA</br>
+				Associate Group - Chethan kumar. (chethana@entrar.in)</br>
+				Start Time : 2022-06-04 11:39</br>
+				End Time : 2022-06-04 11:41</br>
+				Note : Note Meeting with CA on initial discussion lead documents </br>
+				Meeting status - SCHEDULE</br>
+				---------- Update Lead TimeLine Status and Upload Docs -----------</br>
+				Lead Timestam count is - 7</br>
+				1) TimeLine Status - INITIATED</br>
+				Docs Upload Status - Status *
+INITIATED</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043817</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				2) TimeLine Status - Client Affairs</br>
+				Docs Upload Status - Status *
+Client Affairs</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043834</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				3) TimeLine Status - Conflict Check</br>
+				Docs Upload Status - Status *
+Conflict Check</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043850</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				4) TimeLine Status - Client Meeting</br>
+				Docs Upload Status - Status *
+Client Meeting</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043906</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				5) TimeLine Status - Scop of Wrork</br>
+				Docs Upload Status - Status *
+Scop of Wrork</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043921</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				6) TimeLine Status - KYC Doc</br>
+				Docs Upload Status - Status *
+KYC Doc</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043937</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				7) TimeLine Status - Engagement Letter</br>
+				Docs Upload Status - Status *
+Engagement Letter</br>
+				Docs Type - Document Type *
+Policy Docs</br>
+				Docs Note : Automatin test docs note043953</br>
+				File Name : D:/anil/kart/444.jpg</br>
+				Conflict Status - no conflict records found---!!!</br>
+				Lead Status - Lead moved to Client successfuly...!</br>
+				---------- Create Matter -----------</br>
+				Navigated into Client Details - QAnil0306165759 kumar reddy</br>
+				Matter Name Title : Automation Test Matter - 0406114021</br>
+				Location : Bangalore</br>
+				Responsiblity Attroney - abu@entrar.in</br>
+				Practice Area - Criminal Defense</br>
+				Matter Status - OPEN</br>
+				Open Date : 2022-06-04</br>
+				Matter Description : Matter related to the client Case---!</br>
+				Scope : scope of the matter base on the client docuemnts we are going deal the matter</br>
+				Matter Billing - Hourly</br>
+				Constitution - India</br>
+				Party Opposing Name : Entrar Pvt Ltd..</br>
+				Actural :  - Automation Test Matter - 0406114021</br>
+				Expected :  - Automation Test Matter - 0406114021</br>
+				verifed successfly....!</br>
+				------------- Add Matter Documents ---------------</br>
+				Matter Name : Automation Test Matter - 0406114021</br>
+				Document Title : AutomationDocs0406114045</br>
+				Docs Type - Agreement Docs</br>
+				File Name : C:\Users\Anil\OneDrive\Desktop\TestDataImg\_testPdfFile @##$$$%%^^&.pdf</br>
+				Actural :  - AutomationDocs0406114045</br>
+				Expected :  - AutomationDocs0406114045</br>
+				verifed successfly....!</br>
+				------Add Matter Notes--------</br>
+				Notes Title : Automation Notes Title0406114051</br>
+				Description : Automation notes Description0406114051</br>
+				Actural :  - Automation Notes Title0406114051</br>
+				Expected :  - Automation Notes Title0406114051</br>
+				verifed successfly....!</br>
+				-------- Creating Self Task ----------</br>
+				Task Title : Automation Test Task 0406114054</br>
+				Task Priorty - Low</br>
+				Description : Automation Test Task 0406114054 Description</br>
+				DeadLine : 2022-06-04</br>
+				Need approval? - Yes</br>
+				Approval Type - After</br>
+				Group - CA</br>
+				Person - chethana@entrar.in</br>
+				Self task Created - Automation Test Task 0406114054</br>
+				Hearing self Task Name - Automation Test Task 0406114054</br>
+				Actural :  - Automation Test Task 0406114054</br>
+				Expected :  - Automation Test Task 0406114054</br>
+				verifed successfly....!</br>
+				Assign Task Title : Automation Test Task 0406114109</br>
+				Task Priority - Low</br>
+				Group - CA</br>
+				Assinging Person - chethana@entrar.in</br>
+				DeadLine : 06-04-2022 11:51</br>
+				Need approval? - Yes</br>
+				Approval Type - After</br>
+				Group - CA</br>
+				Person - chethana@entrar.in</br>
+				Note : Automation Test Task 0406114109main task note01</br>
+				SubTask ? - Yes</br>
+				Sub Task Title : Automation Sub-Test Task 0406114127</br>
+				Sub-Task Preority - Medium</br>
+				SubTask NOte : subTask NotesAutomation Sub-Test Task 0406114127</br>
+				Group - Attorny</br>
+				Person - abu@entrar.in</br>
+				DeadLine : 2022-06-04</br>
+				Sub-Task Approval ? - Yes</br>
+				Sub-Task Approval Type - After</br>
+				Approval Group - CA</br>
+				Approval Preson - chethana@entrar.in</br>
+				Assign Task Created - Automation Test Task 0406114109</br>
+				Actural :  - Automation Test Task 0406114109</br>
+				Expected :  - Automation Test Task 0406114109</br>
+				verifed successfly....!</br>
+				---- Creating Time Entry Activity ------</br>
+				Client Name - </br>
+				Matter Name - </br>
+				Activity Name - Rate Card 1</br>
+				Hours : 1</br>
+				Minutes : 30</br>
+				Note : clientName client matter name</br>
+				---- Creating Expense Activity ------</br>
+				Client Name - </br>
+				Matter Name - Automation Test Matter - 0406114021</br>
+				Activity Name - qaExpance01</br>
+				Quantity : 2</br>
+				Note : Expense note test01</br>
+				--------- Add New Hearing -----------</br>
+				Hearing Title :  Hearing2022-06-04</br>
+				Responsible Attrony - abu@entrar.in</br>
+				Description : Automation Test Matter - 0406114021 Hearing descriptong testing</br>
+				File Name : C:\Users\Anil\Downloads\unnamed.png</br>
+				Hearing Created Name -  Hearing2022-06-04</br>
+				Task Title : Automation Test Task 0406114230</br>
+				Task Priorty - Low</br>
+				Description : Automation Test Task 0406114230 Description</br>
+				DeadLine : 2022-06-04</br>
+				Need approval? - Yes</br>
+				Approval Type - After</br>
+				Group - CA</br>
+				Person - chethana@entrar.in</br>
+				Self task Created - Automation Test Task 0406114230</br>
+				Hearing self Task Name - Automation Test Task 0406114230</br>
+				Actural :  - Automation Test Task 0406114230</br>
+				Expected :  - Automation Test Task 0406114230</br>
+				verifed successfly....!</br>
+				Assign Task Title : Automation Test Task 0406114242</br>
+				Task Priority - Low</br>
+				Group - CA</br>
+				Assinging Person - chethana@entrar.in</br>
+				DeadLine : 06-04-2022 11:52</br>
+				Need approval? - Yes</br>
+				Approval Type - After</br>
+				Group - CA</br>
+				Person - chethana@entrar.in</br>
+				Note : Automation Test Task 0406114242main task note01</br>
+				SubTask ? - Yes</br>
+				Sub Task Title : Automation Sub-Test Task 0406114300</br>
+				Sub-Task Preority - Medium</br>
+				SubTask NOte : subTask NotesAutomation Sub-Test Task 0406114300</br>
+				Group - Attorny</br>
+				Person - abu@entrar.in</br>
+				DeadLine : 2022-06-04</br>
+				Sub-Task Approval ? - Yes</br>
+				Sub-Task Approval Type - After</br>
+				Approval Group - CA</br>
+				Approval Preson - chethana@entrar.in</br>
+				Assign Task Created - Automation Test Task 0406114242</br>
+				Actural :  - Automation Test Task 0406114242</br>
+				Expected :  - Automation Test Task 0406114242</br>
+				verifed successfly....!</br>
+				-------- Add Short Billing ----------</br>
+				Short Billing Name : ShortBillTask_2022-06-04</br>
+				Practice Area - Employment</br>
+				Open Date : 2022-06-04</br>
+				Description : Description of ShortBillTask_2022-06-04</br>
+				Billing Type - Hourly</br>
+				Rate : 100</br>
+				DeadLine : 2022-06-04</br>
+				Are you the responsible for completion? - No</br>
+				Group - CA</br>
+				Responsible Person - chethana@entrar.in</br>
+				Need Appoval? - Yes</br>
+				Group - CA</br>
+				Group - chethana@entrar.in</br>
+				-------- Creating Rate Card ----------</br>
+				-------- Conflict Check ----------</br>
+				Conflict check for : anil@entrar.in</br>
+				Client Type
+Client Name
+Phone
+Email
+Details</br>
+				-------- Conflict Check ----------</br>
+				Conflict Check for Phone No : 8904556699</br>
+				Client Type
+Client Name
+Phone
+Email
+Details</br>
+				-------- Account Creation ----------</br>
+				Account Name : Qa Account044358</br>
+				Account No : 0406114358044358</br>
+				Account Name : qa HDFC</br>
+				Account Type - Savings</br>
+				Currency Type - AED</br>
+				Opening Balance : 100</br>
+				Sample test runner output message
+				Sample test runner output message2
+		</div>
+	</div>
+</div>
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 3,
+				passParent: 3,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 19,
+				passChild: 19,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 76,
+				passGrandChild: 76,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Test Login and Lead Actions":213.053,"client actions creating Matter":224.501,"Conflict Check and rate Card Creating":17.97
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+			
+            
+        $(document).ready(function() {
+        });
+      
+        
+		</script>
+	</body>
+</html>
